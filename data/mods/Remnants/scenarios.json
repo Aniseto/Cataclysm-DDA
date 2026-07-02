@@ -1,0 +1,13 @@
+[
+  {
+    "type": "scenario",
+    "id": "remnants_awakening",
+    "name": "Remnants - Awakening",
+    "points": 0,
+    "description": "You wake up in a quiet house. The world outside is broken, and every choice from now on defines who you become.",
+    "allowed_locs": [ "sloc_remnants_house" ],
+    "start_name": "Abandoned House",
+    "eoc": [ "remnants_intro_start" ],
+    "flags": [ "CITY_START", "LONE_START" ]
+  }
+]

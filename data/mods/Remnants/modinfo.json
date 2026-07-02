@@ -1,0 +1,11 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "remnants",
+    "name": "Remnants",
+    "authors": [ "jfernandez" ],
+    "description": "Story-focused survival mod: you wake up in a house and begin a long-form survival narrative.",
+    "category": "misc_additions",
+    "dependencies": [ "dda" ]
+  }
+]

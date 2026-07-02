@@ -1,0 +1,75 @@
+[
+  {
+    "type": "mapgen",
+    "update_mapgen_id": "remnants_intro_house_apply",
+    "object": {
+      "place_nested": [
+        { "chunks": [ "remnants_intro_house_layout" ], "x": 0, "y": 0 }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "nested_mapgen_id": "remnants_intro_house_layout",
+    "object": {
+      "mapgensize": [ 24, 24 ],
+      "fill_ter": "t_floor",
+      "rows": [
+        "########################",
+        "#w.....b...##....B....w#",
+        "#..........##.........w#",
+        "#..........##....d....w#",
+        "#..........##.........w#",
+        "#....+.....##....+....w#",
+        "#######.############.###",
+        "#......s....##....r....#",
+        "#......k....##....k....#",
+        "#......k....##....k....#",
+        "#......+....##....+....#",
+        "#######.############.###",
+        "#...T....c...##....o...#",
+        "#............##....u...#",
+        "#....B.......##........#",
+        "#............##........#",
+        "#....+.......##....+...#",
+        "#######.############.###",
+        "#....l.................#",
+        "#......................#",
+        "#.........e............#",
+        "#......................#",
+        "#w....................w#",
+        "########################"
+      ],
+      "terrain": {
+        "#": "t_wall",
+        ".": "t_floor",
+        "+": "t_door_c",
+        "w": "t_window",
+        "e": "t_door_locked"
+      },
+      "furniture": {
+        "b": "f_bed",
+        "B": "f_bookcase",
+        "d": "f_desk",
+        "s": "f_sink",
+        "k": "f_counter",
+        "r": "f_fridge",
+        "T": "f_table",
+        "c": "f_chair",
+        "o": "f_toilet",
+        "u": "f_bathtub",
+        "l": "f_locker"
+      },
+      "place_loot": [
+        { "item": "novel_scifi", "x": 17, "y": 1, "chance": 100 },
+        { "item": "cookbook", "x": 17, "y": 14, "chance": 100 },
+        { "item": "manual_first_aid", "x": 16, "y": 14, "chance": 100 },
+        { "item": "flashlight", "x": 21, "y": 18, "chance": 100 },
+        { "item": "bottle_plastic", "x": 6, "y": 7, "chance": 100, "repeat": [ 2, 4 ] },
+        { "item": "knife_butter", "x": 8, "y": 9, "chance": 100 },
+        { "item": "hammer", "x": 5, "y": 18, "chance": 100 }
+      ],
+      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
+    }
+  }
+]

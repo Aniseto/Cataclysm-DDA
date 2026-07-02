@@ -1,0 +1,21 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "remnants_intro_start",
+    "effect": [
+      { "mapgen_update": "remnants_intro_house_apply" },
+      { "u_add_var": "remnants_intro_active", "value": "yes" },
+      { "u_add_var": "remnants_intro_step", "value": "1" },
+      {
+        "u_message": "You wake up in your own house. Search the rooms, gather essentials, and prepare to leave.",
+        "type": "info",
+        "popup": true
+      },
+      {
+        "u_message": "Tutorial goal: collect water, food, a light source, and one basic weapon before you go outside.",
+        "type": "info",
+        "popup": true
+      }
+    ]
+  }
+]
